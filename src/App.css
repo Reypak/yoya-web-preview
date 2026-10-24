@@ -1026,28 +1026,6 @@ h2 {
 
 /* ---------- Red accent (#e94235) ---------- */
 
-/* Active nav link gets a red underline */
-.nav__links a:not(.btn) {
-  position: relative;
-}
-.nav__links a:not(.btn)::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -6px;
-  height: 2px;
-  border-radius: 2px;
-  background: var(--alert);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.25s;
-}
-.nav__links a.active::after,
-.nav__links a:not(.btn):hover::after {
-  transform: scaleX(1);
-}
-
 /* Tri-colour brand bar under centred section headings, echoing the logo */
 .section__head h2::after {
   content: '';
@@ -1059,10 +1037,7 @@ h2 {
   background: linear-gradient(90deg, var(--primary) 0 40%, var(--accent) 40% 70%, var(--alert) 70%);
 }
 
-/* Numbers and small markers */
-.service__num {
-  color: var(--alert);
-}
+/* Small markers */
 .values .value:nth-child(2) {
   border-left-color: var(--alert);
 }
@@ -1074,7 +1049,7 @@ h2 {
   box-shadow: 0 0 0 6px rgba(233, 66, 53, 0.28);
 }
 
-/* Footer headings and CTA ring */
+/* Footer headings */
 .footer h4::after {
   content: '';
   display: block;
@@ -1083,9 +1058,6 @@ h2 {
   margin-top: 8px;
   border-radius: 3px;
   background: var(--alert);
-}
-.cta::before {
-  border-color: rgba(233, 66, 53, 0.65);
 }
 
 /* A touch of red in the hero glow */
