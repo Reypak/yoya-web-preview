@@ -1,4 +1,5 @@
 import { useEffect, useState, type FormEvent } from 'react'
+import logo from './assets/logo.svg'
 import './App.css'
 
 const NAV = [
@@ -65,14 +66,8 @@ function Icon({ d }: { d: string }) {
 
 function Logo() {
   return (
-    <a href="#top" className="logo" aria-label="YOYA Technologies home">
-      <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
-        <rect width="32" height="32" rx="9" fill="#3a93c9" />
-        <path d="M8 8l8 10 8-10M16 18v7" fill="none" stroke="#fff" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-      <span>
-        YOYA <b>Technologies</b>
-      </span>
+    <a href="#top" className="logo">
+      <img src={logo} alt="YOYA Technologies" width="144" height="50" />
     </a>
   )
 }
@@ -277,7 +272,6 @@ function App() {
       <footer className="footer">
         <div className="container footer__inner">
           <Logo />
-          <p>Delivering value together.</p>
           <p>© {new Date().getFullYear()} YOYA Technologies. All rights reserved.</p>
         </div>
       </footer>
