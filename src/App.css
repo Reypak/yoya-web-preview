@@ -353,11 +353,7 @@ h2 {
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: grayscale(1) contrast(0.8);
-  transition: filter 0.25s;
-}
-.marquee__track:hover .marquee__item img {
-  filter: grayscale(0) contrast(1);
+  filter: none;
 }
 /* Keep reduced-motion users sane */
 @media (prefers-reduced-motion: reduce) {
