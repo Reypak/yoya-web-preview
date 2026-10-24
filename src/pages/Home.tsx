@@ -40,59 +40,23 @@ function Home() {
       <section className="hero hero--split">
         <div className="hero__bg" aria-hidden="true" />
         <div className="container hero__inner">
-          <div className="hero__grid">
-            <div className="hero__copy">
-              <p className="eyebrow">
-                <span className="eyebrow__dot" /> Revenue administration, reimagined
-              </p>
-              <h1>
-                Delivering <span className="gradient">value</span> together
-              </h1>
-              <p className="hero__lead">
-                We build trusted software and ICT solutions that help organisations across Africa collect revenue
-                efficiently, serve customers better and stay accountable.
-              </p>
-              <div className="hero__cta">
-                <Link to="/#contact" className="btn btn--primary">
-                  Start a project
-                </Link>
-                <Link to="/services" className="btn btn--ghost">
-                  Explore services
-                </Link>
-              </div>
-            </div>
-
-            <div className="hero__visual" aria-hidden="true">
-              <div className="mock">
-                <div className="mock__bar">
-                  <i />
-                  <i />
-                  <i />
-                </div>
-                <div className="mock__body">
-                  <div className="mock__row">
-                    <span className="mock__label">Revenue overview</span>
-                    <span className="mock__pill">Live</span>
-                  </div>
-                  <div className="mock__chart">
-                    {[38, 55, 44, 70, 52, 82, 64, 94].map((h, i) => (
-                      <span key={i} style={{ '--h': `${h}%`, '--i': i } as React.CSSProperties} />
-                    ))}
-                  </div>
-                  <div className="mock__lines">
-                    <span />
-                    <span />
-                    <span />
-                  </div>
-                </div>
-              </div>
-              <div className="chip chip--a">
-                <Icon d="M20 6L9 17l-5-5" /> Real-time reconciliation
-              </div>
-              <div className="chip chip--b">
-                <Icon d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /> Secure &amp; audit-ready
-              </div>
-            </div>
+          <p className="eyebrow">
+            <span className="eyebrow__dot" /> Revenue administration, reimagined
+          </p>
+          <h1>
+            Delivering <span className="gradient">value</span> together
+          </h1>
+          <p className="hero__lead">
+            We build trusted software and ICT solutions that help organisations across Africa collect revenue
+            efficiently, serve customers better and stay accountable.
+          </p>
+          <div className="hero__cta">
+            <Link to="/#contact" className="btn btn--primary">
+              Start a project
+            </Link>
+            <Link to="/services" className="btn btn--ghost">
+              Explore services
+            </Link>
           </div>
 
           <ul className="stats">
