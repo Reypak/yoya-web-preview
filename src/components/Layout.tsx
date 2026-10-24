@@ -79,9 +79,48 @@ function Layout() {
       </main>
 
       <footer className="footer">
-        <div className="container footer__inner">
-          <Logo />
+        <div className="container footer__grid">
+          <div className="footer__brand">
+            <Logo />
+            <p>Trusted business solutions that transform revenue administration in Africa.</p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About us</Link>
+              </li>
+              <li>
+                <Link to="/services">Services</Link>
+              </li>
+              <li>
+                <Link to="/#partners">Partners</Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a href="mailto:info@yoyatechnologies.com">info@yoyatechnologies.com</a>
+              </li>
+              <li>
+                <a href="tel:+256783870616">+256 783 870616</a>
+              </li>
+              <li>
+                Plot 38, Friendship Road, Ntinda
+                <br />
+                P.O. Box 121587, Kampala, Uganda
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="container footer__base">
           <p>© {new Date().getFullYear()} YOYA Technologies Ltd. All rights reserved.</p>
+          <p>Delivering value together.</p>
         </div>
       </footer>
     </>

@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
 const TARGETS = [
-  '.hero__inner > *',
+  '.hero__inner > *, .hero__copy > *, .hero__visual',
   '.section__head',
   '.card',
   '.steps li',
