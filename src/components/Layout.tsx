@@ -5,7 +5,7 @@ import logo from '../assets/logo.svg'
 const NAV = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
-  { to: '/#services', label: 'Services' },
+  { to: '/services', label: 'Services' },
   { to: '/#contact', label: 'Contact' },
 ]
 

@@ -287,6 +287,35 @@ h2 {
   margin-top: 28px;
 }
 
+.section__more {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Services page */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.service {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.service .card__icon {
+  flex: none;
+  margin-bottom: 0;
+}
+.service__num {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--primary-dark);
+}
+
 /* About page */
 .hero--page {
   padding: 88px 0 72px;
@@ -563,7 +592,8 @@ h2 {
   }
   .grid,
   .steps,
-  .value-grid {
+  .value-grid,
+  .service-list {
     grid-template-columns: 1fr;
   }
   .section--cta {

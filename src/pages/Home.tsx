@@ -1,40 +1,9 @@
 import { useState, type FormEvent } from 'react'
 import { Link } from 'react-router'
 import Icon from '../components/Icon'
-import { MISSION, VISION } from '../content'
+import { MISSION, SERVICES, VISION } from '../content'
 
-const SERVICES = [
-  {
-    icon: 'M16 18l6-6-6-6M8 6l-6 6 6 6',
-    title: 'Software Development',
-    text: 'Custom web and mobile applications built to scale with your business.',
-  },
-  {
-    icon: 'M18 10h-1.3A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z',
-    title: 'Cloud & DevOps',
-    text: 'Secure, resilient infrastructure and automated delivery pipelines.',
-  },
-  {
-    icon: 'M18 20V10M12 20V4M6 20v-6',
-    title: 'Data & Analytics',
-    text: 'Turn raw data into dashboards and insights that drive decisions.',
-  },
-  {
-    icon: 'M12 2l9 4v6c0 5-3.5 9-9 10-5.5-1-9-5-9-10V6z',
-    title: 'Cybersecurity',
-    text: 'Proactive protection, audits and compliance for what matters most.',
-  },
-  {
-    icon: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM12 8v4l3 2',
-    title: 'IT Consulting',
-    text: 'Clear technology roadmaps that align with your business goals.',
-  },
-  {
-    icon: 'M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8',
-    title: 'Managed Support',
-    text: 'Dependable 24/7 support so your teams can focus on growth.',
-  },
-]
+const FEATURED = SERVICES.slice(0, 6)
 
 const STATS = [
   { value: '150+', label: 'Projects delivered' },
@@ -77,7 +46,7 @@ function Home() {
             <Link to="/#contact" className="btn btn--primary">
               Start a project
             </Link>
-            <Link to="/#services" className="btn btn--ghost">
+            <Link to="/services" className="btn btn--ghost">
               Explore services
             </Link>
           </div>
@@ -100,7 +69,7 @@ function Home() {
             <p>From idea to long-term support, everything you need under one roof.</p>
           </div>
           <ul className="grid">
-            {SERVICES.map((s) => (
+            {FEATURED.map((s) => (
               <li key={s.title} className="card">
                 <span className="card__icon">
                   <Icon d={s.icon} />
@@ -110,6 +79,11 @@ function Home() {
               </li>
             ))}
           </ul>
+          <div className="section__more">
+            <Link to="/services" className="btn btn--ghost">
+              View all {SERVICES.length} services
+            </Link>
+          </div>
         </div>
       </section>
 
