@@ -6,7 +6,7 @@ const TARGETS = [
   '.card',
   '.steps li',
   '.value',
-  '.purpose__card',
+  '.vm__row',
   '.acronym',
   '.about > div',
   '.contact > *',

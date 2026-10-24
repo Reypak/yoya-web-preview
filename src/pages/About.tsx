@@ -1,5 +1,4 @@
 import { Link } from 'react-router'
-import Icon from '../components/Icon'
 import { MISSION, VALUES, VISION } from '../content'
 
 function About() {
@@ -19,21 +18,37 @@ function About() {
         </div>
       </section>
 
-      <section className="section section--tight">
-        <div className="container purpose">
-          <article className="purpose__card">
-            <span className="card__icon">
-              <Icon d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-            </span>
-            <p className="eyebrow">Our Vision</p>
-            <p className="purpose__text">{VISION}</p>
+      <section className="vm">
+        <div className="container">
+          <article className="vm__row">
+            <div className="vm__bar vm__bar--accent">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <circle cx="29" cy="35" r="20" />
+                <circle cx="29" cy="35" r="12" />
+                <circle cx="29" cy="35" r="4" fill="currentColor" />
+                <path d="M29 35L54 10M46 8v10h10" />
+              </svg>
+            </div>
+            <div>
+              <p className="vm__our">Our</p>
+              <h2 className="vm__title">Mission</h2>
+              <p className="vm__text">{MISSION}</p>
+            </div>
           </article>
-          <article className="purpose__card purpose__card--accent">
-            <span className="card__icon">
-              <Icon d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
-            </span>
-            <p className="eyebrow">Our Mission</p>
-            <p className="purpose__text">{MISSION}</p>
+
+          <hr className="vm__divider" />
+
+          <article className="vm__row">
+            <div className="vm__bar vm__bar--blue">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M24 44c0-4-8-8-8-18a16 16 0 0 1 32 0c0 10-8 14-8 18zM25 52h14M27 58h10M32 2v4M8 12l3 3M56 12l-3 3M2 28h4M58 28h4" />
+              </svg>
+            </div>
+            <div>
+              <p className="vm__our">Our</p>
+              <h2 className="vm__title">Vision</h2>
+              <p className="vm__text">{VISION}</p>
+            </div>
           </article>
         </div>
       </section>
