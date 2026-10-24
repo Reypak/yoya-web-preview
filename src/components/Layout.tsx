@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
 import logo from '../assets/logo.svg'
+import { useScrollReveal } from './useScrollReveal'
 
 const NAV = [
   { to: '/', label: 'Home' },
@@ -28,6 +29,8 @@ function Layout() {
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  useScrollReveal(pathname)
 
   // Scroll to the hash target after navigating, or to the top on a new page.
   useEffect(() => {
