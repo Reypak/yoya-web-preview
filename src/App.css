@@ -8,7 +8,8 @@
   opacity: 0;
 }
 .reveal.is-visible {
-  animation: reveal-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms) both;
+  animation: reveal-up 0.7s cubic-bezier(0.22, 1, 0.36, 1)
+    var(--reveal-delay, 0ms) both;
 }
 @keyframes reveal-up {
   from {
@@ -32,7 +33,10 @@
   font: inherit;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s,
+    background 0.15s;
 }
 .btn:hover {
   transform: translateY(-2px);
@@ -70,7 +74,9 @@
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 .nav--scrolled {
   border-color: var(--line);
@@ -127,8 +133,16 @@
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(600px 360px at 15% 10%, rgba(58, 147, 201, 0.22), transparent 70%),
-    radial-gradient(520px 340px at 90% 20%, rgba(58, 147, 201, 0.14), transparent 70%),
+    radial-gradient(
+      600px 360px at 15% 10%,
+      rgba(58, 147, 201, 0.22),
+      transparent 70%
+    ),
+    radial-gradient(
+      520px 340px at 90% 20%,
+      rgba(58, 147, 201, 0.14),
+      transparent 70%
+    ),
     linear-gradient(var(--bg), var(--bg-alt));
 }
 .eyebrow {
@@ -233,7 +247,10 @@ h2 {
   background: #fff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s;
 }
 .card:hover {
   transform: translateY(-6px);
@@ -276,7 +293,7 @@ h2 {
   font-weight: 500;
 }
 .checks li::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 4px;
@@ -321,8 +338,20 @@ h2 {
 .marquee {
   overflow: hidden;
   /* fade edges to transparent */
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
 }
 .marquee__track {
   display: flex;
@@ -335,8 +364,12 @@ h2 {
   animation-play-state: paused;
 }
 @keyframes marquee-scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 .marquee__item {
   display: flex;
@@ -467,7 +500,7 @@ h2 {
   border-top: 2px solid var(--line);
 }
 .steps li::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -2px;
   left: 0;
@@ -500,7 +533,11 @@ h2 {
   text-align: center;
   color: #fff;
   background:
-    radial-gradient(400px 240px at 85% 0%, rgba(255, 255, 255, 0.2), transparent 70%),
+    radial-gradient(
+      400px 240px at 85% 0%,
+      rgba(255, 255, 255, 0.2),
+      transparent 70%
+    ),
     linear-gradient(135deg, var(--primary), var(--primary-deep));
 }
 .cta p {
@@ -621,20 +658,33 @@ h2 {
 }
 .hero--split .hero__bg {
   background:
-    radial-gradient(640px 400px at 8% 0%, rgba(58, 147, 201, 0.22), transparent 70%),
-    radial-gradient(520px 360px at 95% 30%, rgba(246, 167, 32, 0.12), transparent 70%),
+    radial-gradient(
+      640px 400px at 8% 0%,
+      rgba(58, 147, 201, 0.22),
+      transparent 70%
+    ),
+    radial-gradient(
+      520px 360px at 95% 30%,
+      rgba(246, 167, 32, 0.12),
+      transparent 70%
+    ),
     linear-gradient(var(--bg), var(--bg-alt));
 }
 .hero--split .hero__bg::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
   background-size: 56px 56px;
   opacity: 0.55;
   mask-image: radial-gradient(ellipse at 50% 20%, black, transparent 70%);
-  -webkit-mask-image: radial-gradient(ellipse at 50% 20%, black, transparent 70%);
+  -webkit-mask-image: radial-gradient(
+    ellipse at 50% 20%,
+    black,
+    transparent 70%
+  );
 }
 .hero__grid {
   display: grid;
@@ -731,7 +781,8 @@ h2 {
   border-radius: 8px 8px 3px 3px;
   background: linear-gradient(var(--primary), var(--primary-dark));
   transform-origin: bottom;
-  animation: bar-grow 0.9s cubic-bezier(0.22, 1, 0.36, 1) calc(var(--i) * 70ms + 300ms) both;
+  animation: bar-grow 0.9s cubic-bezier(0.22, 1, 0.36, 1)
+    calc(var(--i) * 70ms + 300ms) both;
 }
 .mock__chart span:last-child {
   background: linear-gradient(var(--accent), #e08e00);
@@ -805,7 +856,7 @@ h2 {
   overflow: hidden;
 }
 .card:not(.value-card)::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0 0 auto;
   height: 3px;
@@ -818,7 +869,10 @@ h2 {
   transform: scaleX(1);
 }
 .card__icon {
-  transition: background 0.2s, color 0.2s, transform 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.2s;
 }
 .card:hover .card__icon {
   background: var(--primary-dark);
@@ -832,8 +886,16 @@ h2 {
   overflow: hidden;
   color: #fff;
   background:
-    radial-gradient(520px 320px at 90% 0%, rgba(58, 147, 201, 0.35), transparent 70%),
-    radial-gradient(420px 300px at 0% 100%, rgba(246, 167, 32, 0.12), transparent 70%),
+    radial-gradient(
+      520px 320px at 90% 0%,
+      rgba(58, 147, 201, 0.35),
+      transparent 70%
+    ),
+    radial-gradient(
+      420px 300px at 0% 100%,
+      rgba(246, 167, 32, 0.12),
+      transparent 70%
+    ),
     var(--primary-deep);
 }
 .section--dark .eyebrow {
@@ -867,7 +929,7 @@ h2 {
 }
 .cta::before,
 .cta::after {
-  content: '';
+  content: "";
   position: absolute;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.18);
@@ -893,8 +955,16 @@ h2 {
 /* Inner-page heroes get the same grid texture */
 .hero--page .hero__bg {
   background:
-    radial-gradient(600px 360px at 15% 10%, rgba(58, 147, 201, 0.22), transparent 70%),
-    radial-gradient(480px 320px at 90% 30%, rgba(246, 167, 32, 0.1), transparent 70%),
+    radial-gradient(
+      600px 360px at 15% 10%,
+      rgba(58, 147, 201, 0.22),
+      transparent 70%
+    ),
+    radial-gradient(
+      480px 320px at 90% 30%,
+      rgba(246, 167, 32, 0.1),
+      transparent 70%
+    ),
     linear-gradient(var(--bg), var(--bg-alt));
 }
 
@@ -993,30 +1063,36 @@ h2 {
 
 /* Tri-colour brand bar under centred section headings, echoing the logo */
 .section__head h2::after {
-  content: '';
+  content: "";
   display: block;
   width: 56px;
   height: 4px;
   margin: 18px auto 0;
   border-radius: 4px;
-  background: linear-gradient(90deg, var(--primary) 0 40%, var(--accent) 40% 70%, var(--alert) 70%);
+  background: linear-gradient(
+    90deg,
+    var(--primary) 0 40%,
+    var(--accent) 40% 70%,
+    var(--alert) 70%
+  );
 }
 
 /* Small markers */
 .values .value:nth-child(2) {
-  border-left-color: var(--alert);
+  border-left-color: var(--accent);
 }
 .value-card__letter {
   color: #fdeceb;
 }
-.steps li:last-child .steps__num {
-  background: var(--alert);
-  box-shadow: 0 0 0 6px rgba(233, 66, 53, 0.28);
+.steps li:nth-child(even) .steps__num {
+  background: var(--accent);
+  color: var(--primary-deep);
+  box-shadow: 0 0 0 6px rgba(246, 167, 32, 0.28);
 }
 
 /* Footer headings */
 .footer h4::after {
-  content: '';
+  content: "";
   display: block;
   width: 24px;
   height: 3px;
@@ -1028,9 +1104,21 @@ h2 {
 /* A touch of red in the hero glow */
 .hero--split .hero__bg {
   background:
-    radial-gradient(640px 400px at 8% 0%, rgba(58, 147, 201, 0.22), transparent 70%),
-    radial-gradient(520px 360px at 95% 30%, rgba(246, 167, 32, 0.12), transparent 70%),
-    radial-gradient(420px 300px at 55% 100%, rgba(233, 66, 53, 0.07), transparent 70%),
+    radial-gradient(
+      640px 400px at 8% 0%,
+      rgba(58, 147, 201, 0.22),
+      transparent 70%
+    ),
+    radial-gradient(
+      520px 360px at 95% 30%,
+      rgba(246, 167, 32, 0.12),
+      transparent 70%
+    ),
+    radial-gradient(
+      420px 300px at 55% 100%,
+      rgba(233, 66, 53, 0.07),
+      transparent 70%
+    ),
     linear-gradient(var(--bg), var(--bg-alt));
 }
 
@@ -1039,7 +1127,11 @@ h2 {
   padding: 88px 0;
   color: #fff;
   background:
-    radial-gradient(700px 420px at 50% 0%, rgba(58, 147, 201, 0.35), transparent 70%),
+    radial-gradient(
+      700px 420px at 50% 0%,
+      rgba(58, 147, 201, 0.35),
+      transparent 70%
+    ),
     var(--primary-deep);
 }
 .vm__row {
