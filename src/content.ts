@@ -1,3 +1,17 @@
+export const PARTNERS = [
+  { file: 'ura.png',   name: 'Uganda Revenue Authority' },
+  { file: 'kcca.png',  name: 'Kampala Capital City Authority' },
+  { file: 'ursb.png',  name: 'Uganda Registration Services Bureau' },
+  { file: 'lgfc.jpg',  name: 'Local Government Finance Commission' },
+  { file: 'wb.png',    name: 'World Bank' },
+  { file: 'eu.jpg',    name: 'European Union' },
+  { file: 'uncdf.png', name: 'UN Capital Development Fund' },
+  { file: 'coa.png',   name: 'Court of Arms' },
+  { file: 'fmdv.png',  name: 'FMDV' },
+  { file: 'reap.png',  name: 'REAP' },
+  { file: 'wego.png',  name: 'WeGo' },
+]
+
 export const VISION =
   'To be the leader in providing trusted business solutions that transform revenue administration in Africa.'
 

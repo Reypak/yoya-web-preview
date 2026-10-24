@@ -1,7 +1,13 @@
 import { useState, type FormEvent } from 'react'
 import { Link } from 'react-router'
 import Icon from '../components/Icon'
-import { MISSION, SERVICES, VISION } from '../content'
+import { MISSION, PARTNERS, SERVICES, VISION } from '../content'
+
+// Eagerly import every partner logo so Vite fingerprints and bundles them.
+const partnerImgs = import.meta.glob('../assets/partners/*', {
+  eager: true,
+  import: 'default',
+}) as Record<string, string>
 
 const FEATURED = SERVICES.slice(0, 6)
 
@@ -128,6 +134,26 @@ function Home() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      <section className="section section--alt partners" id="partners">
+        <div className="container partners__head">
+          <p className="eyebrow">Trusted by</p>
+          <h2>Partners &amp; clients who rely on us</h2>
+        </div>
+        {/* Duplicate the list for a seamless infinite scroll */}
+        <div className="marquee" aria-label="Partner logos">
+          <ul className="marquee__track" aria-hidden="false">
+            {[...PARTNERS, ...PARTNERS].map((p, i) => {
+              const src = partnerImgs[`../assets/partners/${p.file}`]
+              return (
+                <li key={i} className="marquee__item">
+                  <img src={src} alt={p.name} />
+                </li>
+              )
+            })}
+          </ul>
         </div>
       </section>
 
