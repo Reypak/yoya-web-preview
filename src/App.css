@@ -343,6 +343,14 @@ h2 {
   font-weight: 600;
   color: var(--primary-dark);
 }
+.contact__info a:hover {
+  text-decoration: underline;
+}
+.contact__info address {
+  font-style: normal;
+  font-weight: 500;
+  color: var(--muted);
+}
 .form {
   display: grid;
   gap: 18px;

@@ -238,9 +238,19 @@ function App() {
               <h2>Let’s start the conversation</h2>
               <p className="about__text">Share a few details and our team will reach out shortly.</p>
               <ul className="contact__info">
-                <li>hello@yoyatech.com</li>
-                <li>+1 (555) 010-0199</li>
-                <li>Mon – Fri, 9:00 – 18:00</li>
+                <li>
+                  <a href="mailto:info@yoyatechnologies.com">info@yoyatechnologies.com</a>
+                </li>
+                <li>
+                  <a href="tel:+256783870616">+256 783 870616</a>
+                </li>
+                <li>
+                  <address>
+                    Plot 38, Friendship Road, Ntinda
+                    <br />
+                    P.O. Box 121587, Kampala, Uganda
+                  </address>
+                </li>
               </ul>
             </div>
             <form className="form" onSubmit={onSubmit}>
