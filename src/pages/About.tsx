@@ -1,5 +1,6 @@
 import { Link } from 'react-router'
 import { MISSION, VALUES, VISION } from '../content'
+import onboarding from '../assets/images/yoyapay-onboarding.jpg'
 
 function About() {
   return (
@@ -16,6 +17,12 @@ function About() {
             collect revenue efficiently and stay accountable.
           </p>
         </div>
+      </section>
+
+      <section className="container banner-wrap">
+        <figure className="banner">
+          <img src={onboarding} alt="Signing in to the YOYA Pay app" width={1080} height={576} />
+        </figure>
       </section>
 
       <section className="vm">

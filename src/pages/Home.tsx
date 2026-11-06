@@ -2,6 +2,8 @@ import { useState, type FormEvent } from 'react'
 import { Link } from 'react-router'
 import Icon from '../components/Icon'
 import { MISSION, PARTNERS, SERVICES, VISION } from '../content'
+import yoyapayApp from '../assets/images/yoyapay-app.jpg'
+import iras from '../assets/images/iras.jpg'
 
 // Eagerly import every partner logo so Vite fingerprints and bundles them.
 const partnerImgs = import.meta.glob('../assets/partners/*', {
@@ -68,6 +70,16 @@ function Home() {
             ))}
           </ul>
         </div>
+      </section>
+
+      <section className="container banner-wrap">
+        <figure className="banner">
+          <img src={yoyapayApp} alt="Customer using the YOYA Pay mobile wallet" width={1080} height={608} />
+          <figcaption className="banner__cap">
+            <p className="eyebrow">YOYA Pay</p>
+            <h2>Pay bills, move money and track every transaction</h2>
+          </figcaption>
+        </figure>
       </section>
 
       <section className="section" id="services">
@@ -137,6 +149,30 @@ function Home() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      <section className="section" id="work">
+        <div className="container feature">
+          <img
+            className="feature__img"
+            src={iras}
+            alt="Presenting the IRAS revenue administration portal on a laptop"
+            width={1080}
+            height={1080}
+            loading="lazy"
+          />
+          <div>
+            <p className="eyebrow">Featured work</p>
+            <h2>IRAS: simple, instant, reliable</h2>
+            <p className="about__text">
+              The Integrated Revenue Administration System gives governments and citizens one secure place to
+              register, pay and track revenue, on the web and on mobile.
+            </p>
+            <Link to="/services" className="btn btn--ghost about__more">
+              See what we build
+            </Link>
+          </div>
         </div>
       </section>
 
