@@ -1040,7 +1040,7 @@ h2 {
 }
 .banner {
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   overflow: hidden;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -1059,7 +1059,6 @@ h2 {
   padding: 80px 40px 36px;
   color: #fff;
   background: linear-gradient(to top, rgba(15, 58, 85, 0.88), rgba(15, 58, 85, 0));
-  text-align: center;
 }
 .banner__cap .eyebrow {
   background: var(--alert);
@@ -1067,7 +1066,7 @@ h2 {
 }
 .banner__cap h2 {
   max-width: 22ch;
-  margin: 0 auto;
+  margin: 0;
 }
 .feature {
   display: grid;
