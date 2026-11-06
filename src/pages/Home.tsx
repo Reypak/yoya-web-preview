@@ -183,7 +183,10 @@ function Home() {
           <div className="section__head">
             <p className="eyebrow">Watch</p>
             <h2>See YOYA in action</h2>
-            <p>A quick look at the solutions we build and the difference they make.</p>
+            <p>
+              A quick look at the solutions we build and the difference they
+              make.
+            </p>
           </div>
           <div className="video">
             <iframe
@@ -210,11 +213,11 @@ function Home() {
           />
           <div>
             <p className="eyebrow">Featured work</p>
-            <h2>IRAS: Simple, Instant, Reliable</h2>
+            <h2>Simple. Instant. Reliable.</h2>
             <p className="about__text">
-              The Integrated Revenue Administration System gives governments and
-              citizens one secure place to register, pay and track revenue, on
-              the web and on mobile.
+              The <b>Integrated Revenue Administration System (IRAS)</b> gives
+              governments and citizens one secure place to register, pay and
+              track revenue, on the web and on mobile.
             </p>
             <Link to="/services" className="btn btn--ghost about__more">
               See what we build

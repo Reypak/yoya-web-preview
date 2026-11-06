@@ -902,9 +902,9 @@ h2 {
   border-radius: 4px;
   background: linear-gradient(
     90deg,
-    var(--primary) 0 40%,
-    var(--accent) 40% 70%,
-    var(--alert) 70%
+    var(--primary) 0 33%,
+    var(--accent) 0% 68%,
+    var(--alert) 48%
   );
 }
 
@@ -976,6 +976,7 @@ h2 {
   place-items: center;
   min-height: 190px;
   color: #fff;
+  border-radius: 1rem;
 }
 .vm__bar svg {
   width: 68px;
