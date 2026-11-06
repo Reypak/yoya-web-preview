@@ -1040,6 +1040,7 @@ h2 {
 }
 .banner {
   position: relative;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   border-radius: var(--radius);
@@ -1067,6 +1068,11 @@ h2 {
 .banner__cap h2 {
   max-width: 22ch;
   margin: 0;
+}
+.banner__cap p:last-child {
+  max-width: 52ch;
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.88);
 }
 .feature {
   display: grid;

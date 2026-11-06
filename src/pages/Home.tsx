@@ -78,6 +78,7 @@ function Home() {
           <figcaption className="banner__cap">
             <p className="eyebrow">YOYA Pay</p>
             <h2>Pay bills, move money and track every transaction</h2>
+            <p>Your wallet, utility payments and mobile money in one secure app, built for everyday life.</p>
           </figcaption>
         </figure>
       </section>
