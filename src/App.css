@@ -913,7 +913,7 @@ h2 {
   border-left-color: var(--accent);
 }
 .value-card__letter {
-  color: #fdeceb;
+  color: #f4f8fa;
 }
 .steps li:nth-child(even) .steps__num {
   background: var(--accent);
@@ -929,7 +929,7 @@ h2 {
   height: 3px;
   margin-top: 8px;
   border-radius: 3px;
-  background: var(--alert);
+  background: var(--primary);
 }
 
 /* A touch of red in the hero glow */
@@ -1059,7 +1059,11 @@ h2 {
   inset: auto 0 0 0;
   padding: 80px 40px 36px;
   color: #fff;
-  background: linear-gradient(to top, rgba(15, 58, 85, 0.88), rgba(15, 58, 85, 0));
+  background: linear-gradient(
+    to top,
+    rgba(15, 58, 85, 0.88),
+    rgba(15, 58, 85, 0)
+  );
 }
 .banner__cap .eyebrow {
   background: var(--alert);
@@ -1100,4 +1104,21 @@ h2 {
   .banner__cap {
     padding: 48px 20px 20px;
   }
+}
+
+/* Video embed */
+.video {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+.video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
