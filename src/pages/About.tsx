@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import { MISSION, VALUES, VISION } from "../content";
-import onboarding from "../assets/images/yoyapay-onboarding.jpg";
 
 function About() {
   return (
